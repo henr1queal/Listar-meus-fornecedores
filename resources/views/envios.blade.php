@@ -11,7 +11,7 @@
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th scope="col" style="width: 10%;">ID</th>
+                            <th scope="col" style="width: 10%;">#</th>
                             <th scope="col" style="width: 30%;">Empresa</th>
                             <th scope="col" style="width: 30%;">Tipo</th>
                             <th scope="col" style="width: 20%;">Telefone</th>

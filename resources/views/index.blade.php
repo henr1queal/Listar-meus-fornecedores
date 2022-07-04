@@ -12,62 +12,65 @@
                 </div>
             </div>
         </div>
-        <form action="" method="post">
+        <form action="{{ route('novo_formulario') }}" method="post">
             @csrf
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="row g-3 mt-1">
                         <div class="col-2">
                             <input type="number" class="form-control form-control-sm" placeholder="Código"
-                                aria-label="Codigo">
+                                aria-label="Codigo" name="codigo">
                         </div>
                         <div class="col-5">
-                            <input type="text" class="form-control form-control-sm" placeholder="Tipo" aria-label="Tipo">
+                            <input required type="text" class="form-control form-control-sm" placeholder="Tipo"
+                                name="tipo" aria-label="Tipo">
                         </div>
                         <div class="col-5">
-                            <input type="text" class="form-control form-control-sm" placeholder="Sub-tipo"
-                                aria-label="Sub-tipo">
+                            <input required type="text" class="form-control form-control-sm" placeholder="Sub-tipo"
+                                aria-label="Sub-tipo" name="subtipo">
                         </div>
                         <div class="col-3">
-                            <input type="text" class="form-control form-control-sm" placeholder="Empresa"
-                                aria-label="Empresa">
+                            <input required type="text" class="form-control form-control-sm" placeholder="Empresa"
+                                aria-label="Empresa" name="empresa">
                         </div>
                         <div class="col-4">
-                            <input type="text" class="form-control form-control-sm" placeholder="Descritivo"
-                                aria-label="Descritivo">
+                            <input required type="text" class="form-control form-control-sm" placeholder="Descritivo"
+                                aria-label="Descritivo" name="descritivo">
                         </div>
                         <div class="col-5">
-                            <input type="url" class="form-control form-control-sm" placeholder="Site" aria-label="Site">
+                            <input required type="url" class="form-control form-control-sm" placeholder="Site"
+                                aria-label="Site" name="site">
                         </div>
                         <div class="col-6">
-                            <input type="email" class="form-control form-control-sm" placeholder="E-mail"
-                                aria-label="Email">
+                            <input required type="email" class="form-control form-control-sm" placeholder="E-mail"
+                                aria-label="Email" name="email">
                         </div>
                         <div class="col-3">
-                            <input type="tel" class="form-control form-control-sm" placeholder="Contato"
-                                aria-label="Contato">
+                            <input required type="tel" class="form-control form-control-sm" placeholder="Contato"
+                                aria-label="Contato" name="contato">
                         </div>
                         <div class="col-3">
-                            <input type="tel" class="form-control form-control-sm" placeholder="Celular"
-                                aria-label="Celular">
+                            <input required type="tel" class="form-control form-control-sm" placeholder="Celular"
+                                aria-label="Celular" name="celular">
                         </div>
                         <div class="col-3">
-                            <input type="tel" class="form-control form-control-sm" placeholder="Telefone"
-                                aria-label="Telefone">
+                            <input required type="tel" class="form-control form-control-sm" placeholder="Telefone"
+                                aria-label="Telefone" name="telefone">
                         </div>
                         <div class="col-5">
-                            <input type="text" class="form-control form-control-sm" placeholder="Endereço"
-                                aria-label="Endereco">
+                            <input required type="text" class="form-control form-control-sm" placeholder="Endereço"
+                                aria-label="Endereco" name="endereco">
                         </div>
                         <div class="col-3">
-                            <input type="text" class="form-control form-control-sm" placeholder="Bairro"
-                                aria-label="Bairro">
+                            <input required type="text" class="form-control form-control-sm" placeholder="Bairro"
+                                aria-label="Bairro" name="bairro">
                         </div>
                         <div class="col-1">
-                            <input type="number" class="form-control form-control-sm" placeholder="Nº" aria-label="Numero">
+                            <input required type="number" class="form-control form-control-sm" placeholder="Nº"
+                                aria-label="Numero" name="numero_casa">
                         </div>
                         <div class="col-12 text-center mt-3">
-                            <button type="button" class="btn btn-success btn-sm">Enviar o formulário</button>
+                            <input type="submit" value="Enviar" class="btn btn-success btn-sm">
                         </div>
                     </div>
                 </div>
